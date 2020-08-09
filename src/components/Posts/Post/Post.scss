@@ -1,0 +1,149 @@
+.Post {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 1;
+  display: block;
+
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 2.125rem;
+      transition: all 0.3s ease-out;
+
+      &:last-child {
+        top: 0;
+        left: -2px;
+        color: rgba(#bf0024, 1);
+        font-size: 2.5rem;
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.title-name {
+  color: #fff !important;
+  position: absolute;
+  top: -7%;
+  right: 0;
+  transform: translateX(-50%);
+  width: 30%;
+  z-index: 10002;
+  &:first-child {
+    top: -6.8%;
+    right: 3%;
+    background-color: #bf0024;
+    color: transparent !important;
+    border: 5px;
+  }
+}
+
+.text-content {
+  background-color: #fff;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 40vh;
+  border-radius: 25px 25px 0px 0px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  z-index: 21;
+  padding: 1rem;
+}
+.text-content img {
+  margin-bottom: 2rem;
+}
+.text-content p {
+  color: #808080;
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.text-content b {
+  font-weight: 700;
+}
+.text-content a {
+  color: #36454f;
+  font-weight: 700;
+}
+.text-content h1,
+h2,
+h3,
+h4 {
+  color: #36454f;
+  margin-bottom: 2rem;
+}
+
+.blockquote {
+  padding: 16px 40px;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+}
+.blockquote p {
+  font-size: 0.6rem;
+  text-align: left;
+  line-height: 1.5;
+}
+.text-content h2 {
+  font-size: 1.5rem;
+}
+
+.author {
+  margin-top: 3rem;
+  padding: 0;
+  font-size: 0.7rem !important;
+}
+
+.blockquote:before {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  font-family: "Teko", sans-serif;
+  content: "“";
+  font-size: 6rem;
+  color: rgba(255, 0, 0, 0.1);
+}
+
+.blockquote::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-bottom: 3px solid #bf0024;
+  height: 2px;
+  width: 100%;
+}
+
+.post-img {
+  max-width: 100%;
+  min-height: 300px;
+}
+.bold {
+  color: red;
+}

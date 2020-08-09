@@ -1,0 +1,50 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Teko:wght@600&display=swap");
+.App {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  background-color: #000;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 2px;
+  line-height: 0.8;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+// Button setup
+.button {
+  font-family: "Teko", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 0.8rem 0;
+  border-radius: 5px;
+  background-color: #bf0024;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+.button-bg {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
