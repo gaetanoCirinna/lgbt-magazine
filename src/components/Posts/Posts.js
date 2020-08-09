@@ -111,14 +111,18 @@ class Posts extends Component {
                       ? this.state.postsContent.map((ele) => {
                           return (
                             <Carousel.Item key={ele.sys.id}>
-                              <Col md={12}>
-                                <Card>
+                              <Col md={12} lg={12}>
+                                <Card className="card-element">
                                   <Card.Img
                                     variant="top"
                                     src={ele.fields.img.fields.file.url}
                                   />
                                   <Card.Body>
-                                    <Card.Title>{ele.fields.title}</Card.Title>
+                                    <Card.Title>
+                                      <h1 className="main-title">
+                                        {ele.fields.title}
+                                      </h1>
+                                    </Card.Title>
                                     <Card.Text>
                                       <p className="">
                                         {ele.fields.description}
@@ -152,18 +156,22 @@ class Posts extends Component {
                   console.log("dentro il map", ele);
                   return (
                     <Col md={4} xs={12} key={ele.sys.id}>
-                      <div
-                        className="Posts__recent-post"
-                        onClick={() => {
-                          this.tooglePost(ele);
-                        }}
-                      >
+                      <div className="Posts__recent-post">
                         <Container fluid={false}>
                           <Row>
                             <Col xs={8} className="no-padding">
                               <div className="container-text">
                                 <h2>{ele.fields.name}</h2>
                                 <p>{ele.fields.description}</p>
+                                <a
+                                  href="#"
+                                  onClick={() => {
+                                    this.tooglePost(ele);
+                                  }}
+                                >
+                                  {" "}
+                                  Leggi l'articolo
+                                </a>
                               </div>
                             </Col>
                             <Col xs={4} className="no-padding">

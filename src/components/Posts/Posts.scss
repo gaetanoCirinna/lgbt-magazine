@@ -1,6 +1,29 @@
 .Posts {
   .container-carousel {
     color: #000;
+
+    p {
+      font-size: 0.8rem;
+      @media (min-width: 768px) {
+        font-size: 1rem;
+      }
+      @media (min-width: 992px) {
+        font-size: 1.125rem;
+      }
+    }
+    h1 {
+      font-size: 1.125rem;
+      @media (min-width: 768px) {
+        font-size: 1.5rem;
+      }
+      @media (min-width: 992px) {
+        font-size: 2rem;
+      }
+    }
+    .card-element {
+      width: 100%;
+      position: relative;
+    }
   }
   &__recent-post {
     width: 100%;
